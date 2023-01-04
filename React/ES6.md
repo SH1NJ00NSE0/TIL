@@ -12,11 +12,11 @@ ES6이전에 변수 선언에 사용된 `var`이외에도 `let`과 `const`가 �
 특히 `const`는 상수를 의미하는 변수를 선언하기 때문에 재할당이 불가능합니다.
 
 ```js
-var test1 = [1,2,3,4,5]; // undefined === pass
-var test1 = [6,7,8,9,0]; // undefined === pass
+var test1 = [1, 2, 3, 4, 5]; // undefined === pass
+var test1 = [6, 7, 8, 9, 0]; // undefined === pass
 
-let test2 = [1,2,3,4,5]; // undefined === pass
-let test2 = [6,7,8,9,0]; // SyntaxError!
+let test2 = [1, 2, 3, 4, 5]; // undefined === pass
+let test2 = [6, 7, 8, 9, 0]; // SyntaxError!
 test2 = 'foo' // 가능
 
 const test3 = 3; // undefined === pass
@@ -130,6 +130,6 @@ console.log(`My name is ${first} ${last}.`) // My name is John Piper.
 //String Interpolation의 표현식 안에 변수명이 들어가면 변수의 값이 문자열로 강제 형변환됩니다.
 //String Interpolation의 표현식 안에서 간단한 연산도 가능합니다.
 
-let num =4
+let num = 4
 console.log (`4*2 = ${num*2}`); // 4*2 = 8
 ```
